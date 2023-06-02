@@ -1,23 +1,25 @@
 <html>
-   <script> 
-let env = "dev"; 
+<script>
+var env = "stage"; 
+var sendingAmount;
 
-let sendingAmount;
-
-if (env === "dev") {
-  sendingAmount = 100 + (100 * 0.10);
-} else if (env === "test") {
-  sendingAmount = 100 + (100 * 0.20);
-} else if (env === "stage") {
-  sendingAmount = 100 + (100 * 0.30);
-} else if (env === "prod") {
-  sendingAmount = 100 + (100 * 0.05);
-} else {
-  sendingAmount = 100;
+switch (env) {
+  case "dev":
+    sendingAmount = 100 + (100 * 0.1);
+    break;
+  case "test":
+    sendingAmount = 100 + (100 * 0.2);
+    break;
+  case "stage":
+    sendingAmount = 100 + (100 * 0.3);
+    break;
+  case "prod":
+    sendingAmount = 100 + (100 * 0.05);
+    break;
+  default:
+    sendingAmount = 100; 
 }
 
 console.log("Sending amount:", sendingAmount);
 </script>
 </html>
-
-var environment="Test",
