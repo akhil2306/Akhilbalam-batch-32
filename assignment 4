@@ -1,6 +1,6 @@
 <html>
 <body>
-<div id ="bio"></div>
+<div id ="bio">
   <p>My Hobbies</p>
   <ul id="hobbies"></ul>
   <input type="text" id="delete-input" placeholder="Enter hobby to delete">
